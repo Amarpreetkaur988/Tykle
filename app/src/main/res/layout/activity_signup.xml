@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:weightSum="10"
+    tools:context="com.tykle.activity.SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/you_can_add_upto_4_images_in_your_profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_16" />
+
+        <FrameLayout
+            android:id="@+id/frame_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_20">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                app:ci_drawable="@drawable/activedot"
+                app:ci_drawable_unselected="@drawable/nonactive" />
+        </FrameLayout>
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="20dp">-->
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:id="@+id/profile_image"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="160dp"-->
+        <!--android:padding="10dp"-->
+        <!--android:src="@drawable/placeholder" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/profile_image_choose"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/profile_image"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginBottom="18dp"-->
+        <!--android:layout_marginStart="110dp"-->
+        <!--android:src="@drawable/ty_h_3" />-->
+        <!--</RelativeLayout>-->
+
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/white_background"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="20sp"
+            android:gravity="center_vertical"
+            android:hint="User Name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="@dimen/textSize_18" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/white_background"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="20sp"
+            android:gravity="center_vertical"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="@dimen/textSize_18" />
+
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/white_background"
+            android:drawableStart="@drawable/mobile"
+            android:drawablePadding="20sp"
+            android:gravity="center_vertical"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="@dimen/textSize_18" />
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/white_background"
+            android:drawableStart="@drawable/mobile"
+            android:drawablePadding="20sp"
+            android:gravity="center_vertical"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="@dimen/textSize_18" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_15"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkTerm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:buttonTint="@color/white"
+                android:checked="false"
+                android:padding="@dimen/spacing_2" />
+
+            <TextView
+                android:id="@+id/termData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/spacing_10"
+                android:padding="@dimen/spacing_4"
+                android:text="Terms and conditions"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_15"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkPrivacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:buttonTint="@color/white"
+                android:checked="false"
+                android:padding="@dimen/spacing_2" />
+
+            <TextView
+                android:id="@+id/privacyData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/spacing_10"
+                android:padding="@dimen/spacing_4"
+                android:text="Privacy Policy"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/filled_white_background"
+            android:text="Signup"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPink"
+            android:textSize="@dimen/textSize_18" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_12"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textSize_20" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

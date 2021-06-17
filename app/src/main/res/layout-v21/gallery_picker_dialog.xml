@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/spacing_10"
+    android:layout_marginStart="@dimen/spacing_10"
+    android:layout_marginTop="@dimen/spacing_10"
+    android:background="@drawable/roundeddialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/spacing_5"
+
+        android:text="Pick From"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textSize_18" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/spacing_10"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_open_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/spacing_5"
+        android:text="@string/camera"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSize_18" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/spacing_10"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_open_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/spacing_5"
+
+        android:text="@string/gallery"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSize_18" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/spacing_10"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/spacing_10"
+        android:layout_marginTop="@dimen/spacing_5"
+        android:text="@string/cancel"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSize_18" />
+
+</LinearLayout>

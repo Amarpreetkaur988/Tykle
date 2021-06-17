@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    tools:context="com.tykle.activity.EditProfileActivity">
+
+    <include layout="@layout/appbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:padding="10dp"
+                    android:src="@drawable/placeholder" />
+
+                <ImageView
+                    android:id="@+id/profile_image_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/profile_image"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginBottom="18dp"
+                    android:src="@drawable/ty_h_3" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+
+
+                        android:src="@drawable/placeholder" />
+
+                    <ImageView
+
+                        android:id="@+id/upload_img1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@+id/image1"
+                        android:layout_alignBottom="@+id/image1"
+                        android:layout_marginEnd="@dimen/spacing_20"
+                        android:src="@drawable/ty_h_3" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+
+                        android:src="@drawable/placeholder" />
+
+                    <ImageView
+
+                        android:id="@+id/upload_img2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@+id/image2"
+                        android:layout_alignBottom="@+id/image2"
+                        android:layout_marginEnd="@dimen/spacing_20"
+                        android:src="@drawable/ty_h_3" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+
+                        android:src="@drawable/placeholder" />
+
+                    <ImageView
+
+                        android:id="@+id/upload_img3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@+id/image3"
+                        android:layout_alignBottom="@+id/image3"
+                        android:layout_marginEnd="@dimen/spacing_20"
+                        android:src="@drawable/ty_h_3" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30sp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_background"
+                    android:drawableStart="@drawable/user"
+                    android:drawablePadding="20sp"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:padding="@dimen/textSize_12"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="@dimen/textSize_16" />
+
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white_background"
+                    android:drawableStart="@drawable/mobile"
+                    android:drawablePadding="20sp"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:padding="@dimen/textSize_12"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="@dimen/textSize_16" />
+
+                <EditText
+                    android:id="@+id/et_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white_background"
+                    android:drawableStart="@drawable/age"
+                    android:drawablePadding="20sp"
+                    android:hint="Age"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:padding="@dimen/textSize_12"
+
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="@dimen/textSize_16" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_10">
+
+                    <Spinner
+                        android:id="@+id/sp_interests"
+                        android:layout_width="fill_parent"
+                        android:layout_height="42sp"
+                        android:layout_marginTop="@dimen/spacing_20"
+                        android:background="@drawable/textviewbackground"
+                        android:gravity="center_vertical"
+                        android:hint="PickUp Truck"
+                        android:paddingStart="@dimen/spacing_10"
+                        android:paddingEnd="@dimen/spacing_15" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/spacing_30"
+                        android:layout_marginEnd="16sp"
+                        android:src="@drawable/ic_down_arrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_10">
+
+                    <Spinner
+                        android:id="@+id/sp_relationType"
+                        android:layout_width="fill_parent"
+                        android:layout_height="42sp"
+                        android:layout_marginTop="@dimen/spacing_20"
+                        android:background="@drawable/textviewbackground"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/spacing_10"
+                        android:paddingEnd="@dimen/spacing_15" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/spacing_30"
+                        android:layout_marginEnd="16sp"
+                        android:src="@drawable/ic_down_arrow" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/et_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white_background"
+                    android:hint="About"
+                    android:padding="@dimen/textSize_12"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="@dimen/textSize_16" />
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="190sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="@dimen/spacing_20"
+                    android:background="@drawable/filled_white_background"
+                    android:padding="16sp"
+                    android:text="save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPink"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

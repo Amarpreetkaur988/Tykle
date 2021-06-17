@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    tools:context="com.tykle.activity.PaymentActivity">
+
+    <include layout="@layout/appbar" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Total Price"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="$15"
+                android:textColor="@color/colorWhite"
+                android:textSize="60sp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_margin="15dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="10sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:weightSum="10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:padding="15sp"
+                    android:weightSum="8">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="2"
+                        android:src="@drawable/visa"
+                        tools:ignore="NestedWeights" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="6"
+                        android:drawableEnd="@drawable/arrow_next"
+                        android:padding="5dp"
+                        android:text="CREDIT CARD"
+                        android:textColor="@color/colorbase"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.3"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:text="CARD NUMBER"
+                    android:textColor="@color/colorbase" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:weightSum="8">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/round_payment"
+                        android:padding="5dp"
+                        android:maxLength="4"
+                        android:inputType="number"
+                        android:textColor="@color/colorWhite"
+                        android:paddingStart="10dp" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/round_payment"
+                        android:padding="5dp"
+                        android:maxLength="4"
+                        android:inputType="number"
+                        android:textColor="@color/colorWhite"
+                        android:paddingStart="10dp" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/round_payment"
+                        android:padding="5dp"
+                        android:maxLength="4"
+                        android:inputType="number"
+                        android:textColor="@color/colorWhite"
+                        android:paddingStart="10dp" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/round_payment"
+                        android:padding="5dp"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColor="@color/colorWhite"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:weightSum="8">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.7"
+                        android:gravity="end"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:text="MONTH"
+                        android:textSize="12sp"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/colorbase" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5.3"
+                        android:gravity="start"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="15dp"
+                        android:paddingTop="5dp"
+                        android:text="YEAR"
+                        android:textSize="12sp"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/colorbase" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.1"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:weightSum="8">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/valid_thru"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorbase" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9"
+                        android:background="@drawable/round_payment">
+
+                        <Spinner
+                            android:id="@+id/month_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/colorWhite"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/round_payment">
+
+                        <Spinner
+                            android:id="@+id/year_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/colorWhite"/>
+                    </LinearLayout>
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1.2"
+                       android:text="CVV"
+                       android:textColor="@color/colorbase"
+                       android:gravity="center_vertical|center"
+                       android:layout_marginStart="5dp"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1.6"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:padding="3dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_height="match_parent"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:background="@drawable/round_payment"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <Button
+            android:layout_width="200dp"
+            android:layout_margin="20dp"
+            android:padding="10sp"
+            android:text="Pay"
+            android:textColor="@color/colorbase"
+            android:textAllCaps="false"
+            android:background="@drawable/white_background"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorWhite"/>
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

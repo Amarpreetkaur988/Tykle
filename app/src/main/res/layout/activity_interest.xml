@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tykle.activity.InterestActivity">
+
+    <include layout="@layout/appbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Interest"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="@dimen/spacing_20"
+        android:layout_margin="@dimen/spacing_5"
+        android:padding="@dimen/spacing_5"
+        android:textAlignment="center"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

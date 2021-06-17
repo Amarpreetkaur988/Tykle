@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#6affffff"
+    app:cardCornerRadius="@dimen/spacing_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_20">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/accetp_reject_circularImage"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@drawable/placeholder"
+            app:civ_border_color="@color/colorbase"
+            app:civ_border_width="@dimen/spacing_2" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/spacing_15"
+            android:text="Name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textSize_20" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_20"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/acceptBtn"
+                android:layout_width="@dimen/spacing_100"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_background"
+                android:backgroundTint="@color/colorbase"
+                android:gravity="center"
+                android:padding="@dimen/spacing_10"
+                android:paddingStart="@dimen/spacing_20"
+                android:paddingEnd="@dimen/spacing_20"
+                android:text="Accept"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textSize_14" />
+
+            <Button
+                android:id="@+id/rejectBtn"
+                android:layout_width="@dimen/spacing_100"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_20"
+                android:layout_toEndOf="@id/acceptBtn"
+                android:background="@drawable/pink_background"
+                android:gravity="center"
+                android:padding="@dimen/spacing_10"
+                android:text="Reject"
+                android:textColor="@color/colorbase"
+                android:textSize="@dimen/textSize_14" />
+
+
+            <ImageView
+                android:id="@+id/iv_show"
+                android:layout_width="@dimen/spacing_40"
+                android:layout_height="@dimen/spacing_40"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/spacing_20"
+                android:layout_toEndOf="@+id/rejectBtn"
+                android:src="@drawable/ic_show"
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

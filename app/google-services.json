@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "647783175343",
+    "firebase_url": "https://supertykle.firebaseio.com",
+    "project_id": "supertykle",
+    "storage_bucket": "supertykle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647783175343:android:b4b6585c9a197767",
+        "android_client_info": {
+          "package_name": "com.tykle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647783175343-t74deest9o5n4i97hi0c7ne22n61prie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa18DDbHH7EylWawpARxue7qwiJn41MvQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_10"
+
+    android:background="@drawable/roundeddialog"
+    android:orientation="vertical"
+
+    android:padding="@dimen/spacing_15">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/age_filters"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textSize_16"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/filterbyabove18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorAccent"
+                    android:text="@string/above_18"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSize_12" />
+
+                <RadioButton
+                    android:id="@+id/filterbytwntytothirty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_5"
+                    android:buttonTint="@color/colorAccent"
+
+                    android:text="@string/_20_30"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSize_12" />
+
+                <RadioButton
+                    android:id="@+id/filterbythirtytofourty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_5"
+                    android:buttonTint="@color/colorAccent"
+
+                    android:text="@string/_30_40"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSize_12" />
+
+                <RadioButton
+                    android:id="@+id/filterbyfourtytofifty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_5"
+                    android:buttonTint="@color/colorAccent"
+                    android:text="@string/_40_50"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSize_12" />
+
+                <RadioButton
+                    android:id="@+id/filterbyolderandwiser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_5"
+                    android:buttonTint="@color/colorAccent"
+                    android:text="Older and Wiser"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSize_12" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location_filters"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textSize_16"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/filterbynearbytofifty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorAccent"
+                    android:text="@string/nearby_to_50km"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSize_12" />
+
+                <RadioButton
+                    android:id="@+id/filterbyfiftykmtohundredkm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_5"
+                    android:buttonTint="@color/colorAccent"
+
+                    android:text="@string/_50km_to_100km"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSize_12" />
+
+                <RadioButton
+                    android:id="@+id/filterbyhundredtoonefiftykm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_5"
+                    android:buttonTint="@color/colorAccent"
+                    android:text="@string/_100km_150km"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSize_12" />
+
+                <RadioButton
+                    android:id="@+id/filterbyonefiftykmtotwohundredkm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_5"
+                    android:buttonTint="@color/colorAccent"
+                    android:text="150Km to 200Km"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSize_12" />
+
+                <RadioButton
+                    android:id="@+id/filterbytwohundredkmtotwofiftykm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_5"
+                    android:buttonTint="@color/colorAccent"
+                    android:text="@string/_200km_to_250km"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSize_12" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/looking_for"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSize_18"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/filterbymale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:text="@string/male"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSize_12" />
+
+        <RadioButton
+            android:id="@+id/filterbyfemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_10"
+            android:buttonTint="@color/colorAccent"
+            android:text="@string/female"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSize_12" />
+
+
+        <RadioButton
+            android:id="@+id/filterbyboth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_10"
+            android:buttonTint="@color/colorAccent"
+            android:text="@string/both"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSize_12" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_apply_filters"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/spacing_20"
+        android:background="@drawable/round_payment"
+        android:text="@string/apply"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textSize_14" />
+
+
+</LinearLayout>

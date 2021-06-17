@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    tools:context="com.tykle.activity.ProfileQuestionActivity">
+
+    <include layout="@layout/appbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginEnd="30sp"
+
+                app:cardBackgroundColor="@color/colorLightPink2"
+                app:cardCornerRadius="10sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="15sp"
+                        android:text="What is your age?"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/cardview_Text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="@color/colorWhite" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/age"
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center_horizontal">
+
+                            <RadioButton
+                                android:id="@+id/Above_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:padding="10sp"
+                                android:text="Above 18"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                            <RadioButton
+                                android:id="@+id/age20_30"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:padding="10sp"
+                                android:text="20-30"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                            <RadioButton
+                                android:id="@+id/age30_40"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10sp"
+                                android:text="30-40"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                            <RadioButton
+                                android:id="@+id/age40-30"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10sp"
+                                android:text="40-50"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                            <RadioButton
+                                android:id="@+id/older_wiser"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10sp"
+                                android:text="Older and Wiser"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+                        </RadioGroup>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginEnd="30sp"
+                app:cardBackgroundColor="@color/colorLightPink2"
+                app:cardCornerRadius="10sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="15sp"
+                        android:text="How do you identify?"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/cardview_Text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="@color/colorWhite" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/identify"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <RadioButton
+                                android:id="@+id/male"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:padding="10sp"
+                                android:text="Male"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                            <RadioButton
+                                android:id="@+id/female"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:padding="10sp"
+                                android:text="Female"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                        </RadioGroup>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginEnd="30sp"
+                app:cardBackgroundColor="@color/colorLightPink2"
+                app:cardCornerRadius="10sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="15sp"
+                        android:text="Are you looking for the?"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/cardview_Text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="@color/colorWhite" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/looking_for"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <RadioButton
+                                android:id="@+id/looking_male"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:padding="10sp"
+                                android:text="Male"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                            <RadioButton
+                                android:id="@+id/looking_female"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:padding="10sp"
+                                android:text="Female"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                            <RadioButton
+                                android:id="@+id/looking_both"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10sp"
+                                android:text="Both"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                        </RadioGroup>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginEnd="30sp"
+                app:cardBackgroundColor="@color/colorLightPink2"
+                app:cardCornerRadius="10sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="15sp"
+                        android:text="What is your first language?"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/cardview_Text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="@color/colorWhite" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/language"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <RadioButton
+                                android:id="@+id/english"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:padding="10sp"
+                                android:text="English"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                            <RadioButton
+                                android:id="@+id/spanish"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:padding="10sp"
+                                android:text="spanish"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                            <RadioButton
+                                android:id="@+id/russian"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10sp"
+                                android:text="Russian"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                            <RadioButton
+                                android:id="@+id/french"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10sp"
+                                android:text="French"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                        </RadioGroup>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginEnd="30sp"
+                android:layout_marginBottom="20sp"
+                app:cardBackgroundColor="@color/colorLightPink2"
+                app:cardCornerRadius="10sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="15sp"
+                        android:text="What is your profession?"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/cardview_Text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="@color/colorWhite" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/profession"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <RadioButton
+                                android:id="@+id/bussion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:padding="10sp"
+                                android:text="Business"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                            <RadioButton
+                                android:id="@+id/job"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:padding="10sp"
+                                android:text="Job"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                            <RadioButton
+                                android:id="@+id/self_employee"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10sp"
+                                android:text="Self Employee"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                            <RadioButton
+                                android:id="@+id/other"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10sp"
+                                android:text="Other"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                        </RadioGroup>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="@dimen/spacing_10"
+                android:layout_marginEnd="30sp"
+                android:layout_marginBottom="20sp"
+                app:cardBackgroundColor="@color/colorLightPink2"
+                app:cardCornerRadius="10sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="15sp"
+                        android:text="what are you looking for?"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/cardview_Text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="@color/colorWhite" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/relationshiptype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <RadioButton
+                                android:id="@+id/seriousrelationship"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:padding="10sp"
+                                android:text="Serious relationship"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+                            <RadioButton
+                                android:id="@+id/socialdating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:gravity="center_vertical"
+                                android:padding="10sp"
+                                android:text="Social dating"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                android:theme="@style/Myradio" />
+
+
+                        </RadioGroup>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="@dimen/spacing_10"
+                android:layout_marginEnd="30sp"
+                android:layout_marginBottom="20sp"
+                app:cardBackgroundColor="@color/colorLightPink2"
+                app:cardCornerRadius="10sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="15sp"
+                        android:text="What is your Interest?"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/cardview_Text_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="@color/colorWhite" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_10">
+
+                            <Spinner
+                                android:id="@+id/sp_interests"
+                                android:layout_width="fill_parent"
+                                android:layout_height="42sp"
+                                android:layout_marginStart="@dimen/spacing_20"
+                                android:layout_marginTop="@dimen/spacing_5"
+                                android:layout_marginEnd="@dimen/spacing_20"
+                                android:background="@drawable/textviewbackground"
+                                android:gravity="center_vertical"
+                                android:hint="PickUp Truck"
+                                android:paddingStart="@dimen/spacing_10"
+                                android:paddingEnd="@dimen/spacing_15" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="@dimen/spacing_15"
+                                android:layout_marginEnd="35sp"
+                                android:src="@drawable/ic_down_arrow" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30sp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="@dimen/spacing_20"
+                android:background="@drawable/filled_white_background"
+                android:gravity="center_horizontal"
+                android:padding="15sp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPink"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

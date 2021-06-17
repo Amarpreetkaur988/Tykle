@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+
+    android:id="@+id/linear_layout"
+    tools:context="com.tykle.fragment.WalkThroughFragment">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="6.5">
+
+   </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:background="@drawable/base">
+      <TextView
+          android:id="@+id/tv_title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/app_bar_height"
+          android:textColor="@color/colorWhite"
+          android:textSize="@dimen/textSize_18"
+          android:gravity="center"
+          android:text="ghhhghhh"/>
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_30"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textSize_16"
+            android:layout_marginStart="@dimen/spacing_30"
+            android:layout_marginEnd="@dimen/spacing_30"
+            android:gravity="center"
+            android:text="hhfhghghkgjkj"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/app_bar_height"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

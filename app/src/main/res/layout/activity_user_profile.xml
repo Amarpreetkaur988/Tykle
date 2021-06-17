@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+
+    <include layout="@layout/chat_app_bar"
+        android:id="@+id/app_bar">
+
+    </include>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+     >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <FrameLayout
+                android:id="@+id/frame_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/spacing_10">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="bottom"
+                    app:ci_drawable="@drawable/activedot"
+                    app:ci_drawable_unselected="@drawable/nonactive" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_15"
+                android:layout_marginTop="@dimen/spacing_15"
+
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textSize_20" />
+
+            <TextView
+                android:id="@+id/age_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_15"
+                android:layout_marginTop="@dimen/spacing_15"
+                android:text="@string/age"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textSize_16" />
+
+            <TextView
+                android:id="@+id/user_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_15"
+                android:layout_marginTop="@dimen/spacing_1"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textSize_18" />
+
+            <TextView
+                android:id="@+id/user_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_15"
+                android:layout_marginTop="@dimen/spacing_1"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textSize_18" />
+
+
+            <TextView
+                android:id="@+id/user_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_15"
+                android:layout_marginTop="@dimen/spacing_15"
+                android:layout_marginEnd="@dimen/spacing_15"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textSize_16" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

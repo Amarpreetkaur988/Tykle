@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<group >
+<item
+    android:icon="@drawable/changepassword"
+    android:id="@+id/change"
+    android:orderInCategory="100"
+    android:title="Change Password" />
+</group>
+    <group>
+    <item
+        android:id="@+id/personal"
+        android:icon="@drawable/person_information"
+        android:title="Personal Information"
+        android:orderInCategory="200"/>
+    </group>
+</menu>
